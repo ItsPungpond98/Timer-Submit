@@ -13,7 +13,7 @@ Please do not modify these storages in your maps.<br>
 ## Timer
 1. The `timer` objective is reserved
 2. Run the following command on repeat when you want to use the timer.
-```
+```mcfunction
 function time:time/timer
 ```
 3. Use the data from the storage `timer:timervalue` to do stuff. The digits are provided individually in the storage as json.
@@ -24,7 +24,7 @@ function time:time/timer
 ## Time Submission Link
 1. The `hscalc, big_multiply, big_add` objectives are reserved
 2. Run the following command:
-```
+```mcfunction
 function timesub/gen {"v": #version, "map_id": #map_id}
 ```
 - `#version` is the time submission link version
