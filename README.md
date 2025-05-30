@@ -30,6 +30,9 @@ function timesub/gen {"v": #version, "map_id": #map_id}
 - `#version` is the time submission link version
 - `#map_id` is the unique number id of a map.
 
+> [!IMPORTANT]
+> Times less than 40.0 seconds will be considered an invalid run since the map definitely takes more time to beat than that.
+
 | Version | Example Time Code |
 |---------|-------------------|
 | 1 | 2195740065245 |
