@@ -1,0 +1,10 @@
+$execute if score .timecode hscalc matches 1000000.. run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)$(ctime)"}}]
+$execute if score .timecode hscalc matches 100000..999999 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)0$(ctime)"}}]
+$execute if score .timecode hscalc matches 10000..99999 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)00$(ctime)"}}]
+$execute if score .timecode hscalc matches 1000..9999 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)000$(ctime)"}}]
+$execute if score .timecode hscalc matches 100..999 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)0000$(ctime)"}}]
+$execute if score .timecode hscalc matches 10..99 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)00000$(ctime)"}}]
+$execute if score .timecode hscalc matches 0..9 run tellraw @s [{"text": "Click Here To Submit Your Run!","color": "gold","click_event": {"action": "open_url","url": "https://itspungpond98.vercel.app/maps/time-submit?timecode=$(cmap)000000$(ctime)"}}]
+
+scoreboard objectives remove hscalc
+data remove storage timer:timesub calctemp
